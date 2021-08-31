@@ -4,6 +4,9 @@ import win32event
 import servicemanager
 import sys
 
+import psutil
+import subprocess
+
 
 class SMWinservice(win32serviceutil.ServiceFramework):
     """
@@ -38,6 +41,7 @@ class SMWinservice(win32serviceutil.ServiceFramework):
         self.ReportServiceStatus(win32service.SERVICE_STOP_PENDING)
         # And set my event.
         win32event.SetEvent(self.hWaitStop)
+        self.kill_sip_pid()
 
     def SvcDoRun(self):
         # self.ReportServiceStatus(win32service.SERVICE_RUNNING)
@@ -57,3 +61,16 @@ class SMWinservice(win32serviceutil.ServiceFramework):
         eg. invalidating running condition
         """
         pass
+
+    @staticmethod
+    def kill_sip_pid():
+        import time
+        time.sleep(1)
+        process_name_list = ["pythonservice.exe"]
+        for process_name in process_name_list:
+            pl = psutil.pids()
+            for pid in pl:
+                if psutil.Process(pid).name() == process_name:
+                    # kill进程
+                    find_kill = 'taskkill -f -pid %s' % (pid)
+                    subprocess.run(find_kill)
