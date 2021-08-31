@@ -1,0 +1,72 @@
+{
+  "api": {
+    "cors": true
+  },
+  "auth": {
+    "id_key": "username",
+    "max_refresh": 3600,
+    "realm": "test zone",
+    "secret": "secret",
+    "timeout": 86400
+  },
+  "backup": {
+    "dir": "/var/lib/iwall/console/backup"
+  },
+  "db": {
+    "charset": "utf8mb4",
+    "db": "waf",
+    "debug": false,
+    "host": "127.0.0.1",
+    "password": "123456",
+    "port": 3306,
+    "timeout": 5,
+    "user": "root"
+  },
+  "license": {
+    "control_file": "/etc/iwall/engine/waf/control.json"
+  },
+  "network_tool": {
+    "capture_dir": "/var/log/iwall/console/capture",
+    "timeout_capture": 2592000,
+    "timeout_ping": 5
+  },
+  "package": {
+    "status_file": "/var/log/iwall/console/package_status.json"
+  },
+  "proxy": {
+    "conf_dir": "/etc/iwall/engine"
+  },
+  "role": {
+    "admin": " 系统管理员",
+    "auditor": "审计管理员",
+    "security": "安全管理员"
+  },
+  "service": {
+    "daemon_log": "daemon.log",
+    "pid_file": "wafconsole.pid"
+  },
+  "shell": {
+    "timeout": 30
+  },
+  "waf": {
+    "rule_dir": "/etc/iwall/engine/waf"
+  },
+  "webserver": {
+    "access_log": "access-%Y%m%d.log",
+    "bind": "0.0.0.0",
+    "bind6": "::",
+    "cert_file": "waf.crt",
+    "error_log": "error-%Y%m%d.log",
+    "key_file": "waf.key",
+    "log_level": "info",
+    "log_path": "/var/log/iwall/console",
+    "max_header_bytes": 2097152,
+    "port": 60066,
+    "read_timeout": 60,
+    "ssl": true,
+    "ssl_protocol": "",
+    "stop_wait": 5,
+    "sys_log": "sys-%Y%m%d.log",
+    "write_timeout": 60
+  }
+}

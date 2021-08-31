@@ -1,0 +1,16 @@
+{
+  "bind": "0.0.0.0",
+  "port": 8088,
+  "ssl": false,
+  "iwall_conf": "/etc/iwall/engine/waf",
+  "cert_dir": "/etc/iwall/engine/cert",
+  "log_dir": "/var/log/iwall/console",
+  "database": {
+    "user": "root",
+    "password": "123456",
+    "host": "127.0.0.1",
+    "port": "3306",
+    "db_name": "waf",
+    "charset": "utf8mb4"
+  }
+}

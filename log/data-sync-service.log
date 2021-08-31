@@ -1,0 +1,92 @@
+2021/08/31 02:47:12 PM INFO    data sync start monitor.
+2021/08/31 02:47:12 PM INFO    Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021/08/31 02:47:12 PM INFO    sync job start.
+2021/08/31 02:47:12 PM INFO    Added job "backup_file" to job store "default"
+2021/08/31 02:47:12 PM INFO    Scheduler started
+2021/08/31 02:47:12 PM DEBUG   Looking for jobs to run
+2021/08/31 02:47:12 PM INFO    Running job "backup_file (trigger: interval[1:00:00], next run at: 2021-08-31 14:47:12 CST)" (scheduled at 2021-08-31 14:47:12.403290+08:00)
+2021/08/31 02:47:12 PM DEBUG   Next wakeup is due at 2021-08-31 15:47:12.403290+08:00 (in 3599.948032 seconds)
+2021/08/31 02:47:12 PM DEBUG   starting thread (client mode): 0xf937ba48
+2021/08/31 02:47:12 PM DEBUG   Local version/idstring: SSH-2.0-paramiko_2.7.2
+2021/08/31 02:47:12 PM DEBUG   Remote version/idstring: SSH-2.0-OpenSSH_8.0
+2021/08/31 02:47:12 PM INFO    Connected (version 2.0, client OpenSSH_8.0)
+2021/08/31 02:47:12 PM DEBUG   kex algos:['curve25519-sha256', 'curve25519-sha256@libssh.org', 'ecdh-sha2-nistp256', 'ecdh-sha2-nistp384', 'ecdh-sha2-nistp521', 'diffie-hellman-group-exchange-sha256', 'diffie-hellman-group14-sha256', 'diffie-hellman-group16-sha512', 'diffie-hellman-group18-sha512', 'diffie-hellman-group-exchange-sha1', 'diffie-hellman-group14-sha1'] server key:['rsa-sha2-512', 'rsa-sha2-256', 'ssh-rsa', 'ecdsa-sha2-nistp256', 'ssh-ed25519'] client encrypt:['aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes256-ctr', 'aes256-cbc', 'aes128-gcm@openssh.com', 'aes128-ctr', 'aes128-cbc'] server encrypt:['aes256-gcm@openssh.com', 'chacha20-poly1305@openssh.com', 'aes256-ctr', 'aes256-cbc', 'aes128-gcm@openssh.com', 'aes128-ctr', 'aes128-cbc'] client mac:['hmac-sha2-256-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha1', 'umac-128@openssh.com', 'hmac-sha2-512'] server mac:['hmac-sha2-256-etm@openssh.com', 'hmac-sha1-etm@openssh.com', 'umac-128-etm@openssh.com', 'hmac-sha2-512-etm@openssh.com', 'hmac-sha2-256', 'hmac-sha1', 'umac-128@openssh.com', 'hmac-sha2-512'] client compress:['none', 'zlib@openssh.com'] server compress:['none', 'zlib@openssh.com'] client lang:[''] server lang:[''] kex follows?False
+2021/08/31 02:47:12 PM DEBUG   Kex agreed: curve25519-sha256@libssh.org
+2021/08/31 02:47:12 PM DEBUG   HostKey agreed: ssh-ed25519
+2021/08/31 02:47:12 PM DEBUG   Cipher agreed: aes128-ctr
+2021/08/31 02:47:12 PM DEBUG   MAC agreed: hmac-sha2-256
+2021/08/31 02:47:12 PM DEBUG   Compression agreed: none
+2021/08/31 02:47:12 PM DEBUG   kex engine KexCurve25519 specified hash_algo <built-in function openssl_sha256>
+2021/08/31 02:47:12 PM DEBUG   Switch to new keys ...
+2021/08/31 02:47:12 PM DEBUG   Attempting password auth...
+2021/08/31 02:47:12 PM DEBUG   userauth is OK
+2021/08/31 02:47:12 PM INFO    Authentication (password) successful!
+2021/08/31 02:47:12 PM DEBUG   [chan 0] Max packet in: 32768 bytes
+2021/08/31 02:47:12 PM DEBUG   Received global request "hostkeys-00@openssh.com"
+2021/08/31 02:47:12 PM DEBUG   Rejecting "hostkeys-00@openssh.com" global request from server.
+2021/08/31 02:47:12 PM DEBUG   [chan 0] Max packet out: 32768 bytes
+2021/08/31 02:47:12 PM DEBUG   Secsh channel 0 opened.
+2021/08/31 02:47:12 PM DEBUG   [chan 0] Sesch channel 0 request ok
+2021/08/31 02:47:12 PM INFO    [chan 0] Opened sftp connection (server version 3)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] listdir(b'/etc/iwall/console')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/server.json.example')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/server.json.example')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/server.json.example', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/server.json.example', 'rb') -> 00000000
+2021/08/31 02:47:12 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/server.json')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/server.json')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/server.json', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/server.json', 'rb') -> 00000000
+2021/08/31 02:47:12 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json.bak')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json.bak')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json.bak', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json.bak', 'rb') -> 00000000
+2021/08/31 02:47:12 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json.rpmorig')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json.rpmorig')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json.rpmorig', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json.rpmorig', 'rb') -> 00000000
+2021/08/31 02:47:12 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json.rpmsave')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json.rpmsave')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json.rpmsave', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json.rpmsave', 'rb') -> 00000000
+2021/08/31 02:47:12 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json', 'rb') -> 00000000
+2021/08/31 02:47:12 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json.rpmnew')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json.rpmnew')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json.rpmnew', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json.rpmnew', 'rb') -> 00000000
+2021/08/31 02:47:12 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json.example')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/console.json.example')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json.example', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/console.json.example', 'rb') -> 00000000
+2021/08/31 02:47:12 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/waf.crt')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/waf.crt')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/waf.crt', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/waf.crt', 'rb') -> 00000000
+2021/08/31 02:47:12 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/waf.key')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/waf.key')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/waf.key', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/waf.key', 'rb') -> 00000000
+2021/08/31 02:47:12 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/rule_desc.json')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] stat(b'/etc/iwall/console/rule_desc.json')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/rule_desc.json', 'rb')
+2021/08/31 02:47:12 PM DEBUG   [chan 0] open(b'/etc/iwall/console/rule_desc.json', 'rb') -> 00000000
+2021/08/31 02:47:13 PM DEBUG   [chan 0] close(00000000)
+2021/08/31 02:47:13 PM INFO    Job "backup_file (trigger: interval[1:00:00], next run at: 2021-08-31 15:47:12 CST)" executed successfully
+2021/08/31 02:47:24 PM INFO    data sync stop monitor.
+2021/08/31 02:47:24 PM INFO    Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2021/08/31 02:47:24 PM INFO    sync job start.
+2021/08/31 02:47:24 PM DEBUG   Scheduler is not running
